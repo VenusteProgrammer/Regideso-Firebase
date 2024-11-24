@@ -1,0 +1,214 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+            /* background-image: url("https://pbs.twimg.com/media/DNnr_QvXUAAT8y8.jpg"); */
+            background-color: #b5b19f;
+            /* background-repeat: no-repeat;
+            background-size: cover; */
+        
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Ubuntu";
+    font-weight: bold;
+}
+
+#main-navigation {
+    
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #647CB4;
+}
+
+.nav-wrapper{
+    color: green;
+}
+
+.nav-wrapper a {
+    text-decoration: none;
+    color: #b8503e;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.nav-wrapper a:visited {
+    color: #ffffff;
+}
+.nav-wrapper a:active {
+    color: inherit;
+}
+
+.nav-wrapper a:hover {
+    color: #f4ea2b;
+}
+
+#main-navigation h1 a:hover,
+#main-navigation h1 a:active {
+    color: white;
+}
+
+.container{
+    padding: 0 10%;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 100px;
+}
+
+td{
+    padding: 10px;
+} 
+
+th{
+    font-size: 20px;
+}
+
+
+
+
+#comment-form,table{
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 40rem;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    margin-top: 150px;
+}
+
+#comment-form button {
+    font: inherit;
+    background-color: #647CB4;;
+    color: white;
+    border: 1px solid #647CB4;;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#comment-form button:hover,
+#comment-form button:active {
+    background-color: #4f0ba7;
+    border-color: #4f0ba7;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-control input,
+.form-control textarea {
+    display: block;
+    width: 100%;
+    font: inherit;
+    padding: 0.25rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.errorlist {
+    list-style: none;
+    margin: 0.5rem 0;
+    padding: 0;
+    color: #d6000b;
+}
+
+.invalid label {
+    color: #d6000b;
+}
+
+.invalid input,
+.invalid textarea {
+    border-color: #d6000b;
+    background-color: #ffe6e7;
+}
+
+
+.apropo{
+        font-family: "Ubuntu";
+        font-size: 2.2rem;
+        font-weight: 100;
+    }
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #DF4B31;
+    
+        /* background-color: #6b0606; */
+    margin-top: 1%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+ .footer-col p {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #fff;
+ }
+
+ .social-icons {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 10px;
+ }
+
+  .social-icons a {
+      color: #b5b19f;
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      transition: all 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+      color: #f4ea2b;
+  }

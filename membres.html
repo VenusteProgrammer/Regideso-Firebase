@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Membres</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #e0e5ec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: -60px;
+            left: 0;
+            padding: 0.8rem 1.5rem;
+            background: #e0e5ec;
+            border: none;
+            border-radius: 10px;
+            color: #2d4059;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow:
+                5px 5px 10px #a3b1c6,
+                -5px -5px 10px #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        .back-button::before {
+            content: '←';
+            font-size: 1.2rem;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+            box-shadow:
+                7px 7px 15px #a3b1c6,
+                -7px -7px 15px #ffffff;
+        }
+
+        .back-button:active {
+            box-shadow:
+                inset 5px 5px 10px #a3b1c6,
+                inset -5px -5px 10px #ffffff;
+        }
+
+        h1 {
+            color: #2d4059;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .members-list {
+            background: #e0e5ec;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow:
+                8px 8px 15px #a3b1c6,
+                -8px -8px 15px #ffffff;
+        }
+
+        .member {
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            background: #e0e5ec;
+            box-shadow:
+                inset 5px 5px 10px #a3b1c6,
+                inset -5px -5px 10px #ffffff;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .member:hover {
+            transform: translateX(10px);
+        }
+
+        .member-name {
+            color: #2d4059;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                margin-top: 3rem;
+            }
+
+            .back-button {
+                top: -50px;
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .members-list {
+                padding: 1rem;
+            }
+
+            .member {
+                padding: 0.8rem 1.2rem;
+            }
+
+            .member-name {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">Retour à l'accueil</a>
+        <h1>Nos Membres</h1>
+        <div class="members-list">
+            <div class="member">
+                <h2 class="member-name">NDAYISENGA Jules Cesar Junior</h2>
+            </div>
+            <div class="member">
+                <h2 class="member-name">NDAYIZEYE Claver</h2>
+            </div>
+            <div class="member">
+                <h2 class="member-name">NDAYIZEYE Venuste</h2>
+            </div>
+            <div class="member">
+                <h2 class="member-name">NDERAGAKURA Zebede</h2>
+            </div>
+            <a href="https://github.com/VenusteProgrammer/Regideso-Firebase"> Cliquez ici pour voir Code source et le fichier Power Point</a>
+        </div>
+    </div>
+</body>
+
+</html>
